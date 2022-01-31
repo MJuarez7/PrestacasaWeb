@@ -11976,7 +11976,7 @@ fieldset:disabled .btn {
   }
 }
 
-@media (max-width: 663px) {
+@media (min-width: 663px) {
   #buttonLogin {
     display: none;
   }
