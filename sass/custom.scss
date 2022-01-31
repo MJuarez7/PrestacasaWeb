@@ -11,13 +11,25 @@ $secondary: #0594fc;
 
 .container-slider{
     margin-top: 72.6px;
+   
  
 }
 
 .content-formNav {
     width: 55%;
 
+.content-img{
+    height: 1020px;
+}
 
+.carousel-inner{
+    min-height: 400px;
+    max-height: 600px;
+}
+.carousel-item {
+    min-height: 400px;
+    max-height: 600px;
+}
 }
 @media (max-width: 1032px) { 
  #buttonLogin{

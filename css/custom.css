@@ -11970,6 +11970,20 @@ fieldset:disabled .btn {
   width: 55%;
 }
 
+.content-formNav .content-img {
+  height: 1020px;
+}
+
+.content-formNav .carousel-inner {
+  min-height: 400px;
+  max-height: 600px;
+}
+
+.content-formNav .carousel-item {
+  min-height: 400px;
+  max-height: 600px;
+}
+
 @media (max-width: 1032px) {
   #buttonLogin {
     display: none;
