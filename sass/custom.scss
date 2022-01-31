@@ -1,1 +1,38 @@
+
+$primary:  #fb0453  ;
+$secondary: #0594fc;
+
 @import "../node_modules/bootstrap/scss/bootstrap";
+
+.container-header{
+    margin-top: 80px;
+    height: 30rem;
+}
+
+.container-slider{
+    margin-top: 72.6px;
+ 
+}
+
+.content-formNav {
+    width: 55%;
+
+
+}
+@media (max-width: 1032px) { 
+ #buttonLogin{
+     display: none;
+ }
+
+}
+@media (max-width: 663px) { 
+    #buttonLogin{
+        display: none;
+    }
+    .container-slider{
+        margin-top: 110.6px;
+     
+    }
+    
+    
+   }
