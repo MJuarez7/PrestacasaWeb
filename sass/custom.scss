@@ -2,6 +2,17 @@
 $primary:  #fb0453  ;
 $secondary: #0594fc;
 
+$spacer: 1rem;
+$spacers: (
+  0: 0,
+  1: $spacer * .25,
+  2: $spacer * .5,
+  3: $spacer,
+  4: $spacer * 1.5,
+  5: $spacer * 3,
+  8: 72.6px,
+);
+
 @import "../node_modules/bootstrap/scss/bootstrap";
 
 .container-header{
@@ -27,6 +38,9 @@ $secondary: #0594fc;
     min-height: 400px;
     
 }
+.container-p{
+    margin-top: 100px;
+}
 
 
 }
@@ -50,15 +64,23 @@ $secondary: #0594fc;
     #tiendaFace{
         display: none;
     }
+    
  
    }
    @media (min-width: 663px) { 
     #categoriasImages{
         display: none;
     }
-     
+  
    }
+   .MultiCarousel { float: left; overflow: hidden; padding: 15px; width: 100%; position:relative; }
+   .MultiCarousel .MultiCarousel-inner { transition: 1s ease all; float: left; }
+       .MultiCarousel .MultiCarousel-inner .item { float: left;}
+       .MultiCarousel .MultiCarousel-inner .item > div { text-align: center; padding:10px; margin:10px; background:#f1f1f1; color:#666;}
+   .MultiCarousel .leftLst, .MultiCarousel .rightLst { position:absolute; border-radius:50%;top:calc(50% - 20px); }
+   .MultiCarousel .leftLst { left:0; }
+   .MultiCarousel .rightLst { right:0; }
+   
+       .MultiCarousel .leftLst.over, .MultiCarousel .rightLst.over { pointer-events: none; background:#ccc; }
 
-#carouselExampleIndicators{
-    margin-top: 72.6px;
-}
+       
