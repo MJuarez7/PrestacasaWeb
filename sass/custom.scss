@@ -28,6 +28,7 @@ $secondary: #0594fc;
     
 }
 
+
 }
 @media (max-width: 1032px) { 
  #buttonLogin{
@@ -43,5 +44,18 @@ $secondary: #0594fc;
         margin-top: 110.6px;
      
     }
+    #carouselExampleIndicators{
+        display: none;
+    }
      
    }
+   @media (min-width: 576px) { 
+    #categoriasImages{
+        display: none;
+    }
+     
+   }
+
+#carouselExampleIndicators{
+    margin-top: 72.6px;
+}

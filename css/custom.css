@@ -11991,5 +11991,18 @@ fieldset:disabled .btn {
   .container-slider {
     margin-top: 110.6px;
   }
+  #carouselExampleIndicators {
+    display: none;
+  }
+}
+
+@media (min-width: 576px) {
+  #categoriasImages {
+    display: none;
+  }
+}
+
+#carouselExampleIndicators {
+  margin-top: 72.6px;
 }
 /*# sourceMappingURL=custom.css.map */
