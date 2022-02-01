@@ -11994,6 +11994,9 @@ fieldset:disabled .btn {
   #carouselExampleIndicators {
     display: none;
   }
+  #tiendaFace {
+    display: none;
+  }
 }
 
 @media (min-width: 663px) {
