@@ -12326,7 +12326,7 @@ fieldset:disabled .btn {
 }
 
 .content-formNav {
-  width: 45%;
+  width: 55%;
 }
 
 .content-formNav .carousel-inner {
@@ -12341,7 +12341,7 @@ fieldset:disabled .btn {
   margin-top: 100px;
 }
 
-@media (max-width: 1032px) {
+@media (max-width: 1200px) {
   #buttonLogin {
     display: none;
   }
@@ -12368,8 +12368,14 @@ fieldset:disabled .btn {
   }
 }
 
-@media (max-width: 599px) {
+@media (max-width: 833px) {
   #buttonMarket {
+    display: none;
+  }
+}
+
+@media (min-width: 833px) {
+  #floatShop {
     display: none;
   }
 }
