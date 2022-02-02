@@ -104,3 +104,51 @@ $(document).ready(function () {
     }
 
 });
+
+
+ //funciones para movimientos
+ //crecer y decrecer
+
+ let imgSer = document.getElementsByClassName("imgSer");
+ let imgGrand = document.getElementsByClassName("imgGrand");
+
+ //imagen pequeña
+var crecer = function () {
+    this.style.transform ="scale(1.25, 1.25)";
+    this.style.transition = "0.8s";
+    
+};
+
+var nocrecer = function () {
+    this.style.transform="scale(1, 1)";
+    this.style.transition = "0.8s";
+    this.style.transition = "0.8s";
+};
+
+for (var i = 0; i < imgSer.length; i++) {
+    imgSer[i].addEventListener('mouseover', crecer, false);
+}
+
+for (var i = 0; i < imgSer.length; i++) {
+    imgSer[i].addEventListener('mouseout', nocrecer, false);
+}
+//imagen grande
+var crecer = function () {
+    this.style.transform ="scale(1.05, 1.05)";
+    this.style.transition = "0.8s";
+    
+};
+
+var nocrecer = function () {
+    this.style.transform="scale(1, 1)";
+    this.style.transition = "0.8s";
+    this.style.transition = "0.8s";
+};
+
+for (var i = 0; i < imgSer.length; i++) {
+    imgGrand[i].addEventListener('mouseover', crecer, false);
+}
+
+for (var i = 0; i < imgSer.length; i++) {
+    imgGrand[i].addEventListener('mouseout', nocrecer, false);
+}
