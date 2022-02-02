@@ -12326,7 +12326,7 @@ fieldset:disabled .btn {
 }
 
 .content-formNav {
-  width: 55%;
+  width: 45%;
 }
 
 .content-formNav .carousel-inner {
@@ -12352,7 +12352,7 @@ fieldset:disabled .btn {
     display: none;
   }
   .container-slider {
-    margin-top: 110.6px;
+    margin-top: 75.6px;
   }
   #carouselExampleIndicators {
     display: none;
@@ -12364,6 +12364,12 @@ fieldset:disabled .btn {
 
 @media (min-width: 663px) {
   #categoriasImages {
+    display: none;
+  }
+}
+
+@media (max-width: 599px) {
+  #buttonMarket {
     display: none;
   }
 }

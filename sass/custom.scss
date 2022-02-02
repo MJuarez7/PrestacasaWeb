@@ -27,7 +27,7 @@ $spacers: (
 }
 
 .content-formNav {
-    width: 55%;
+    width: 45%;
 
 
 .carousel-inner{
@@ -55,7 +55,7 @@ $spacers: (
         display: none;
     }
     .container-slider{
-        margin-top: 110.6px;
+        margin-top: 75.6px;
      
     }
     #carouselExampleIndicators{
@@ -64,15 +64,20 @@ $spacers: (
     #tiendaFace{
         display: none;
     }
-    
  
    }
+
+
    @media (min-width: 663px) { 
     #categoriasImages{
         display: none;
     }
    }
-
+   @media (max-width: 599px) { 
+    #buttonMarket{
+     display:none;
+    }
+}
 .material-icons{
    vertical-align: middle;
 }
