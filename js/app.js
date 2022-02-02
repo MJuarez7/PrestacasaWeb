@@ -107,12 +107,13 @@ $(document).ready(function () {
 
 
  //funciones para movimientos
- //crecer y decrecer
-
+ 
  let imgSer = document.getElementsByClassName("imgSer");
  let imgGrand = document.getElementsByClassName("imgGrand");
+ let buttonAnimation= document.getElementsByClassName("buttonAnimation");
 
- //imagen pequeña
+ //imagen pequeña//crecer y decrecer
+
 var crecer = function () {
     this.style.transform ="scale(1.25, 1.25)";
     this.style.transition = "0.8s";
@@ -133,22 +134,38 @@ for (var i = 0; i < imgSer.length; i++) {
     imgSer[i].addEventListener('mouseout', nocrecer, false);
 }
 //imagen grande
-var crecer = function () {
+var crecerb = function () {
     this.style.transform ="scale(1.05, 1.05)";
     this.style.transition = "0.8s";
     
 };
 
-var nocrecer = function () {
+var nocrecerb = function () {
     this.style.transform="scale(1, 1)";
     this.style.transition = "0.8s";
     this.style.transition = "0.8s";
 };
 
-for (var i = 0; i < imgSer.length; i++) {
-    imgGrand[i].addEventListener('mouseover', crecer, false);
+for (var i = 0; i < imgGrand.length; i++) {
+    imgGrand[i].addEventListener('mouseover', crecerb, false);
 }
 
-for (var i = 0; i < imgSer.length; i++) {
-    imgGrand[i].addEventListener('mouseout', nocrecer, false);
+for (var i = 0; i < imgGrand.length; i++) {
+    imgGrand[i].addEventListener('mouseout', nocrecerb, false);
+}
+
+//efecto boton facebook
+var heartBeat = function () {
+    this.classList.add("animate__animated");
+    this.classList.add("animate__heartBeat");
+};
+var heartBeatOff = function () {
+    this.classList.remove("animate__animated");
+    this.classList.remove("animate__heartBeat");
+};
+for (var i = 0; i < buttonAnimation.length; i++) {
+    buttonAnimation[i].addEventListener('mouseover', heartBeat, false);
+}
+for (var i = 0; i < buttonAnimation.length; i++) {
+    buttonAnimation[i].addEventListener('mouseout', heartBeatOff, false);
 }
