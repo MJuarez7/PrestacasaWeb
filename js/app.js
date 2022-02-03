@@ -125,7 +125,7 @@ $(document).ready(function () {
         htmlproductos +=  "<div class='card-group row justify-content-start'>";
         for (var j = 0; j <= arregloDeArreglos[i].length - 1; j++) {
           htmlproductos +="<div class='card col-4'>"+
-                            "<img class='card-img-top' src='images/"+arregloDeArreglos[i][j].imagen+"' alt='Card image'>"+
+                            "<img class='card-img-top' style='height:300px;width:300px' src='images/"+arregloDeArreglos[i][j].imagen+"' alt='Card image'>"+
                             "<div class='card-body'>"+
                               "<h5 class='card-title'>"+arregloDeArreglos[i][j].nombre+"</h5>"+
                               "<p class='card-text'>"+arregloDeArreglos[i][j].descripcion+"</p>"+
@@ -142,6 +142,16 @@ $(document).ready(function () {
       $('#productos').append(htmlproductos);
     }
   });
+
+    $("#marca").click(function(){
+        $("#marcas").slideToggle("slow");
+    });
+    $("#modelo").click(function(){
+        $("#modelos").slideToggle("slow");
+    });
+    $("#categoria").click(function(){
+        $("#categorias").slideToggle("slow");
+    });
 
 });
 
